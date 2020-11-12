@@ -1,0 +1,39 @@
+.CarouselContainer {
+  position: relative;
+  overflow: hidden;
+
+  .CarouselContainer__button {
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 8px 8px -5px rgba(0, 0, 68, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #f0f4f8;
+    }
+    &--prev {
+      position: absolute;
+      top: 50%;
+      left: 4px;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    &--next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 4px;
+      z-index: 10;
+    }
+  }
+
+  img {
+    position: absolute;
+    max-width: 100vw;
+  }
+}
